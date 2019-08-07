@@ -13,7 +13,7 @@ Limited memory BFGS: https://github.com/stephenbeckr/L-BFGS-B-C
 
 This work has been submitted to Pacific Symposium on Biocomputing (PSB) 2020
 
-# Detailed derivations of the variational update rules and additional information are found in BSNMTF_supplementary_PSB2020.pdf.
+* Detailed derivations of the variational update rules and additional information are found in BSNMTF_supplementary_PSB2020.pdf.
 
 Contact information: Sunho Park (parks[nospam]@ccf.org) 
 
