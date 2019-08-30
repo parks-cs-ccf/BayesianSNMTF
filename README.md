@@ -8,11 +8,12 @@ BSNMTF is a semi-nonnegative matrix tri-factorization method in the framework of
 
 2. BSNMTF_top3_allcombined_geneset_enrichment.xlsx: cotains the pathway analysis in the main paper
 
-3. MATLAB codes (./matlab_codes)
-
-  3-1 bsnmtf.m (Bayesian Semi-Nonnegative Matrix Tri-Factorization): the main Matlab function
-  
-  3-2 script_simulation_Z0_incomplete.m: contains the experiment on the simulation data in the main paper 
+3. MATLAB codes (./matlab_codes) \
+3-1 bsnmtf.m (Bayesian Semi-Nonnegative Matrix Tri-Factorization): the main Matlab function\
+3-2 script_BSNMTF_simulation_Z0_incomplete.m: the experiment on the simulation data in the main paper \
+3-3 script_BSNTMF_TCGA_STAD_Subtypes.m: the experiment on the TCGA gastric cancer dataset in the main paper \ 
+3-4 script_BSNTMF_ImmunotherapyResponse.m: the experiment on the metastatic gastric cancer immunotherapy clinical-trial dataset in the main paper\ 
+3-5 script_BSNMTF_supp_experiments.m: the experiments on the simulation dataset in the supplementary material
 
 # Requirements
 To test BSNMTF (on the simulation data in the main paper), run script_simulation_Z0_incomplete.m (Matlab or Octave, but we have tested our code only on Matlab)
@@ -21,6 +22,8 @@ call bsnmtf.m  (input arguments: X, U, Z0, A, options)
 
 To rune the codes, you need the following optimziation toolbox: 
 Limited memory BFGS: https://github.com/stephenbeckr/L-BFGS-B-C
+
+The data files in the script files, script_BSNTMF_TCGA_STAD_Subtypes.m and script_BSNTMF_ImmunotherapyResponse.m, are not included in this repository. Please contact the authors if you want to run both scripts.
 
 # Notes
 This work has been submitted for consideration in Pacific Symposium on Biocomputing © [2020] World Scientific Publishing Co., Singapore, http://psb.stanford.edu/.
