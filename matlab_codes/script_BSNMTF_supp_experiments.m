@@ -1,6 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title: 'Bayesian semi-nonnegative matrix tri-factorization to identify
+% pathways associated with cancer phenotypes'
+%
+% Author: Nabhonil Kar (nkar@princeton.edu)
+%
+% This script generates the supplementary material's simulated experiments.
+% Experiment 1 is the baseline example. Experiment 2 adds one noisey block.
+% Experiment 3 adds noise to the whole observation matrix. To run the
+% script, the NTriPath (point estimate) algorithm is required and is
+% available at 'https://github.com/hwanglab/NTriPath'.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 close all; clear; clc;
 %% select the experiment
-n_sel_exp = 1;
+n_sel_exp = 2;
 mc_experiments = {'Experiment-1', ... % baseline experiment
     'Experiment-2', ... % added noisey block
     'Experiment-3'}; % added noise to whole observation matrix (note: in this experiment,
@@ -109,7 +121,7 @@ switch mc_sel_exp
         
         %% Bayesian semi-nonnegative matrix tri-factorization
         mc_opt.MaxIters = 30;
-        mc_Solution = myfunc_BSNMTF_ssp_final(md_X, md_U, md_V0, md_A, mc_opt);
+        mc_Solution = bsnmtf(md_X, md_U, md_V0, md_A, mc_opt);
         
         md_X_hat = mc_Solution.U * mc_Solution.S * (mc_Solution.Z .* mc_Solution.V)';
         
@@ -228,7 +240,7 @@ switch mc_sel_exp
         
         %% Bayesian semi-nonnegative matrix tri-factorization
         mc_opt.MaxIters = 30;
-        mc_Solution = myfunc_BSNMTF_ssp_final(md_X, md_U, md_V0, md_A, mc_opt);
+        mc_Solution = bsnmtf(md_X, md_U, md_V0, md_A, mc_opt);
         
         md_X_hat = mc_Solution.U * mc_Solution.S * (mc_Solution.Z .* mc_Solution.V)';
         
@@ -348,7 +360,7 @@ switch mc_sel_exp
         
         %% Bayesian semi-nonnegative matrix tri-factorization
         mc_opt.MaxIters = 30;
-        mc_Solution = myfunc_BSNMTF_ssp_final(md_X, md_U, md_V0, md_A, mc_opt);
+        mc_Solution = bsnmtf(md_X, md_U, md_V0, md_A, mc_opt);
         
         md_X_hat = mc_Solution.U * mc_Solution.S * (mc_Solution.Z .* mc_Solution.V)';
         
