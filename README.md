@@ -9,8 +9,8 @@ BSNMTF is a semi-nonnegative matrix tri-factorization method in the framework of
 2. BSNMTF_top3_allcombined_geneset_enrichment.xlsx: cotains the pathway analysis in the main paper
 
 3. MATLAB codes (./matlab_codes)
-  1) bsnmtf.m (Bayesian Semi-Nonnegative Matrix Tri-Factorization): the main Matlab function
-  2) script_simulation_Z0_incomplete.m: contains the experiment on the simulation data in the main paper 
+  3-1 bsnmtf.m (Bayesian Semi-Nonnegative Matrix Tri-Factorization): the main Matlab function
+  3-2 script_simulation_Z0_incomplete.m: contains the experiment on the simulation data in the main paper 
 
 # Requirements
 To test BSNMTF (on the simulation data in the main paper), run script_simulation_Z0_incomplete.m (Matlab or Octave, but we have tested our code only on Matlab)
