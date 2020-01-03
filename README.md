@@ -26,7 +26,7 @@ Limited memory BFGS: https://github.com/stephenbeckr/L-BFGS-B-C
 The data files in the script files, script_BSNTMF_TCGA_STAD_Subtypes.m and script_BSNTMF_ImmunotherapyResponse.m, are not included in this repository. Please contact the authors if you want to run both scripts.
 
 # Notes
-This work has been submitted for consideration in Pacific Symposium on Biocomputing © [2020] World Scientific Publishing Co., Singapore, http://psb.stanford.edu/.
+This work is included in the Proceedings of Pacific Symposium on Biocomputing (PSB 2020), https://psb.stanford.edu/psb-online/proceedings/psb20/.
 
 Contact information: Sunho Park (parks[nospam]@ccf.org) 
 
